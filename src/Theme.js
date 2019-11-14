@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { withFormik, Form, Field } from 'formik';
-import * as Yup from 'yup';
+import { Field, Form } from 'formik';
 
 export const MainForm = styled.form`
   width: 300px;
@@ -13,7 +12,7 @@ export const MainForm = styled.form`
   padding: 2% 1%;
 `;
 
-export const InputForm = styled.form`
+export const InputForm = styled(Form)`
   display:flex
   flex-direction: column;
   justify-content:space-between;
